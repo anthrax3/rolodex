@@ -1,0 +1,23 @@
+{
+  "name": "rolodex",
+  "version": "1.0.0",
+  "description": "an employee listing page with react",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patriciarealini/rolodex.git"
+  },
+  "author": "Patricia Realini",
+  "license": "ISC",
+  "engines": {
+    "node": "6.3.0",
+    "npm": "3.10.3"
+  },
+  "bugs": {
+    "url": "https://github.com/patriciarealini/rolodex/issues"
+  },
+  "homepage": "https://github.com/patriciarealini/rolodex#readme"
+}
