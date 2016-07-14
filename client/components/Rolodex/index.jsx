@@ -7,14 +7,14 @@ const styles = {
     backgroundColor: "Tomato",
     border: "10px solid Firebrick"
   },
-  h1Example: {
+  h1Rolodex: {
     color: "moccasin"
   }
 };
 @Radium
 @connect((state) => {
 });
-class Example extends Component {
+class Rolodex extends Component {
 
   static propTypes = {
     exampleProps: PropTypes.string
@@ -24,11 +24,11 @@ class Example extends Component {
 
     return (
       <div style={styles.example}>
-        <h1 style={styles.h1Example}>Example Component</h1>
+        <h1 style={styles.h1Rolodex}>Rolodex Component</h1>
         <p>{this.props.exampleProps}</p>
       </div>
     );
   }
 };
 
-export default Example;
+export default Rolodex;

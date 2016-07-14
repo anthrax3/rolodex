@@ -1,7 +1,7 @@
 import React from "react";
 
-import Example from "./Example/index.jsx"
+import Rolodex from "./Rolodex/index.jsx"
 
 export {
-  Example
+  Rolodex
 }
