@@ -4,7 +4,18 @@
   "description": "an employee listing page with react",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:assets && npm run build:client",
+    "build:assets": "gulp",
+    "build:client": "mkdir -p './ui/' && browserify --transform babelify --entry './client/index.jsx' --outfile './ui/index.js'",
+    "lint": "eslint './client/'",
+    "test": "mocha --compilers js:babel-register './client/**/test.js'",
+    "start": "node server/index.js",
+    "watch": "npm-run-all --parallel watch:build watch:lint watch:test start",
+    "watch:build": "mkdir -p './ui/' && npm-run-all --parallel watch:build:client watch:build:assets",
+    "watch:build:client": "watchify --transform babelify --entry './client/index.jsx' --outfile './ui/index.js'",
+    "watch:build:assets": "gulp watch",
+    "watch:lint": "chokidar './client/' --initial --command 'npm run lint --silent'",
+    "watch:test": "chokidar './client/' --initial --command 'npm run test --silent'"
   },
   "repository": {
     "type": "git",
