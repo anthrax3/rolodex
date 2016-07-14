@@ -25,3 +25,30 @@ We know you will be missing assets you would include in a production environment
 ## Things I Need To Learn How To Do
 
 ## Work Work Work Work Work Work
+
+- [x]  Fork `jsboilerplate`
+  Ran into this error message `Leading decorators must be attached to a class declaration (16:2) while parsing file` because there are still semicolons in my boilerplate files but ES7 babel will throw an error with semicolons. So gotta delete those.
+- [x] Delete semicolons
+  Ran into this error message next `Error: cannot resolve path (or pattern) './client/**/test.js'` because there are no test files in my repo at all. Set up empty test files just to get the server running.
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
