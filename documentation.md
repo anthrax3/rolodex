@@ -30,8 +30,10 @@ We know you will be missing assets you would include in a production environment
   Ran into this error message `Leading decorators must be attached to a class declaration (16:2) while parsing file` because there are still semicolons in my boilerplate files but ES7 babel will throw an error with semicolons. So gotta delete those.
 - [x] Delete semicolons
   Ran into this error message next `Error: cannot resolve path (or pattern) './client/**/test.js'` because there are no test files in my repo at all. Set up empty test files just to get the server running.
-- [ ]
-- [ ]
+- [x] Init test files for actions and reducers
+  New error `ESLint couldn't find a configuration file. To set up a configuration file for this project`. Went to [ESLint Config Docs](http://eslint.org/docs/user-guide/configuring) and found that if i add an `eslintConfig` field in a `package.json` file or a `.eslintrc` file to the project, this error should go away. This error occurred because my jsboilerplate directory, when copied, doesn't carry over the dot files. I have rectified this situation in that project.
+- [x] Copy `.eslintrc` from expo & jsboilerplate.
+
 - [ ]
 - [ ]
 - [ ]
